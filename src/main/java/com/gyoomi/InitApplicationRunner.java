@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.ResourceBundle;
 
 /**
- * 类功能描述
+ * Used to complete the initialization of the data
  *
  * @author Leon
  * @version 2019/5/10 14:13
@@ -30,7 +30,7 @@ public class InitApplicationRunner {
             throw new ParseException("Can not find any data form 【" + fileName + "】 properties file");
         }
         props.keySet().forEach(key -> buildTown(key, props.getString(key)));
-        CONFIG.townContextHolder.initMatrix();
+        Configuration.townContextHolder.initMatrix();
     }
 
     private void buildTown(String townName, String distance) {
@@ -44,7 +44,7 @@ public class InitApplicationRunner {
         Town to = new Town();
         to.setName(toTownName);
         Route route = new Route(from, to, Integer.parseInt(distance));
-        CONFIG.townContextHolder.addTownAndRoute(from, route);
+        Configuration.townContextHolder.addTownAndRoute(from, route);
     }
 
 

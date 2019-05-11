@@ -10,7 +10,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * 类功能描述
+ * Tool for loading resources
  *
  * @author Leon
  * @version 2019/5/10 14:02

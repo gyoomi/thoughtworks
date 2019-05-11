@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 /**
- * 类功能描述
+ * Town
  *
  * @author Leon
  * @version 2019/5/10 9:53
@@ -19,6 +19,9 @@ public class Town implements Comparable<Town>, Serializable {
 
     private static final long serialVersionUID = -2515700412978222529L;
 
+    /**
+     * The name for town unique
+     */
     private String name;
 
     public Town() {}

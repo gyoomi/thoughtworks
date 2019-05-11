@@ -10,13 +10,16 @@ import com.gyoomi.entity.Town;
 import com.gyoomi.support.TownContextHolder;
 
 /**
- * 类功能描述
+ * The abstract class for accessing
  *
  * @author Leon
  * @version 2019/5/10 15:50
  */
 public abstract class AbstractProcessor implements Processor {
 
+    /**
+     * Data holder
+     */
     private TownContextHolder townContextHolder;
 
     protected AbstractProcessor(TownContextHolder townContextHolder) {

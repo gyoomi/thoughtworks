@@ -6,7 +6,7 @@
 
 package com.gyoomi.test;
 
-import com.gyoomi.CONFIG;
+import com.gyoomi.Configuration;
 import com.gyoomi.InitApplicationRunner;
 import com.gyoomi.builder.TownBuilder;
 import com.gyoomi.entity.Town;
@@ -35,7 +35,7 @@ public class DistanceOfRouteProcessorTest {
     @Test
     public void testTheDistanceOfABC(){
         List<Town> townRouteList = TownBuilder.buildSpecifiedTownRoute(Arrays.asList("A", "B", "C"));
-        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(CONFIG.townContextHolder, townRouteList);
+        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(Configuration.townContextHolder, townRouteList);
         String distance = distanceOfRouteProcessor.process();
         Assert.assertEquals(9, Long.parseLong(distance));
     }
@@ -43,7 +43,7 @@ public class DistanceOfRouteProcessorTest {
     @Test
     public void testTheDistanceOfAD(){
         List<Town> townRouteList = TownBuilder.buildSpecifiedTownRoute(Arrays.asList("A", "D"));
-        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(CONFIG.townContextHolder, townRouteList);
+        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(Configuration.townContextHolder, townRouteList);
         String distance = distanceOfRouteProcessor.process();
         Assert.assertEquals(5, Long.parseLong(distance));
     }
@@ -51,7 +51,7 @@ public class DistanceOfRouteProcessorTest {
     @Test
     public void testTheDistanceOfADC(){
         List<Town> townRouteList = TownBuilder.buildSpecifiedTownRoute(Arrays.asList("A", "D", "C"));
-        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(CONFIG.townContextHolder, townRouteList);
+        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(Configuration.townContextHolder, townRouteList);
         String distance = distanceOfRouteProcessor.process();
         Assert.assertEquals(13, Long.parseLong(distance));
     }
@@ -59,7 +59,7 @@ public class DistanceOfRouteProcessorTest {
     @Test
     public void testTheDistanceOfAEBCD(){
         List<Town> townRouteList = TownBuilder.buildSpecifiedTownRoute(Arrays.asList("A", "E", "B", "C", "D"));
-        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(CONFIG.townContextHolder, townRouteList);
+        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(Configuration.townContextHolder, townRouteList);
         String distance = distanceOfRouteProcessor.process();
         Assert.assertEquals(22, Long.parseLong(distance));
     }
@@ -67,7 +67,7 @@ public class DistanceOfRouteProcessorTest {
     @Test
     public void testTheDistanceOfAED(){
         List<Town> townRouteList = TownBuilder.buildSpecifiedTownRoute(Arrays.asList("A", "E", "D"));
-        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(CONFIG.townContextHolder, townRouteList);
+        DistanceOfRouteProcessor distanceOfRouteProcessor = new DistanceOfRouteProcessor(Configuration.townContextHolder, townRouteList);
         String distance = distanceOfRouteProcessor.process();
         Assert.assertEquals("NO SUCH ROUTE", distance);
     }

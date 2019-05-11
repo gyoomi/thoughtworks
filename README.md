@@ -53,3 +53,10 @@ Output #7: 3 <br>
 Output #8: 9 <br>
 Output #9: 9 <br>
 Output #10: 7 <br>
+
+## Operational requirements
+- JDK 8+
+- Maven 3.0+
+
+## How to run the test
+通过运行test模块下com.gyoomi.test包的test case

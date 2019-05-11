@@ -14,7 +14,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import java.util.List;
 
 /**
- * 类功能描述
+ * The class for calculating the distance of two towns
  *
  * @author Leon
  * @version 2019/5/10 16:00

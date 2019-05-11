@@ -12,7 +12,7 @@ import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.*;
 /**
- * 类功能描述
+ * Holding the data of towns
  *
  * @author Leon
  * @version 2019/5/10 13:49

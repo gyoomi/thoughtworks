@@ -7,7 +7,7 @@
 package com.gyoomi.exception;
 
 /**
- * 类功能描述
+ * The Exception for parsing
  *
  * @author Leon
  * @version 2019/5/10 13:45
