@@ -60,3 +60,6 @@ Output #10: 7 <br>
 
 ## How to run the test
 通过运行test模块下com.gyoomi.test包的test case
+
+## Sample Graph
+![](./asserts/001.png)
